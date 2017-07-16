@@ -116,11 +116,20 @@ if ! shopt -oq posix; then
   fi
 fi
 
+
+# Ruby
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# git bash config
 source ~/.git-bash/git-prompt.sh
 source ~/.git-bash/git-completion.bash
 GIT_PS1_SHOWDIRTYSTATE=true
+
+# prompt config
 export PS1='# \[\033[32m\]\u @ in \[\033[34m\]\w on git:\[\033[31m\]$(__git_ps1)\[\033[00m\]\n$ '
 export LS_COLORS='di=01;35'
+
+# alias
 alias ls='ls -F --color'
+alias rm='rm -i'
