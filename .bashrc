@@ -34,7 +34,6 @@ alias grep='grep -E --color=auto'
 #alias cp='cp -iv'
 alias rm='rm -i'
 #alias mv='mv -i'
-alias mkcd='source ~/bin/mkcd.sh'
 
 #
 # odは16進数でのバイナリダンプコマンド
@@ -66,6 +65,8 @@ fi
 
 alias vim='vi'
 alias la='ls -a'
+alias mkcd='source ~/bin/mkcd.sh'
+alias g++='g++ -std=c++11'
 
 #ターミナルでの補完
 source /usr/local/etc/bash_completion.d/git-prompt.sh
