@@ -1,4 +1,8 @@
 export PATH=/usr/local/bin:/usr/bin:/bin
+
+#JAVA_HOME=C:\Program Files\Java\jdk1.8.0_152
+#SCALA_HOME=C:\Program Files\scala
+
 alias brew="env PATH=${PATH/\/Users\/takc923\/\.phpenv\/shims:/} brew"
 
 alias vim='vim;clear'
