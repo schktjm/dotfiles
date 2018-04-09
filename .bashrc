@@ -1,9 +1,8 @@
 #
-# .bashrc 
+# .bashrc
 #
-
 # command prompt
-PS1="\[\e[35m\] [\w] \[\e[31m\](\!)\[\e[33m\]\$(__git_ps1)\n\[\e[32m\]٩( ‘ω’ )و \[\e[0m\]$ "
+PS1="e\[\e[35m\] [\w] \[\e[31m\](\!)\[\e[33m\]\$(__git_ps1)\n\[\e[32m\]٩(๑•̀ω•́๑)۶ \[\e[0m\]$ "
 
 # alias
 alias rm='rm -i'
@@ -12,6 +11,7 @@ alias ll='ls -l'
 alias la='ls -a'
 alias g++='g++ -std=c++11'
 alias ls='exa'
+alias sl='sl -aF'
 
 alias mkcd='source ~/bin/mkcd.sh'
 
