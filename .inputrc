@@ -1,0 +1,9 @@
+#
+#Tabキーで補完してくれるよ
+#/Users/(ユーザ名)においとけばいいらしい
+#
+# https://qiita.com/fantm21/items/7e9b23ddd8a958a93679
+#
+
+set completion-ignore-case on
+TAB: menu-complete
