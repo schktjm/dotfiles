@@ -2,7 +2,7 @@
 # .bashrc
 #
 # command prompt
-PS1="\[\e[35m\] [\w] \[\e[31m\](\!)\[\e[33m\]\$(__git_ps1)\n\[\e[32m\]٩(๑•̀ω•́๑)۶ \[\e[0m\]$ "
+PS1="\[\e[35m\] [\w] \[\e[31m\](\!)\[\e[33m\]\$(__git_ps1)\n\[\e[32m\]◟(ˊ꒵ˋ∗)◜∗.♪ \[\e[0m\]$ "
 
 # alias
 alias rm='rm -i'
