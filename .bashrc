@@ -18,8 +18,10 @@ alias mkcd='source ~/bin/mkcd.sh'
 alias arduino180='/Applications/Arduino180.app/Contents/MacOS/Arduino'
 alias arduino185='/Applications/Arduino185.app/Contents/MacOS/Arduino'
 
+eval "$(hub alias -s)"
 
 #ターミナルでの補完
 source /usr/local/etc/bash_completion.d/git-prompt.sh
 source /usr/local/etc/bash_completion.d/git-completion.bash
+
 

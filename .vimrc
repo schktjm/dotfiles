@@ -43,6 +43,8 @@ NeoBundle 'suy/vim-ctrlp-commandline'
 NeoBundle 'rking/ag.vim'
 " プロジェクトに入ってるESLintを読み込む
 NeoBundle 'pmsorhaindo/syntastic-local-eslint.vim'
+"arduinoでvimが使えるようにする
+NeoBundle 'sudar/vim-arduino-syntax'
 
 " vimのlua機能が使える時だけ以下のVimプラグインをインストールする
 if has('lua')
@@ -108,7 +110,7 @@ set shiftwidth=4 " smartindentで増減する幅
 " 文字列検索
 "----------------------------------------------------------
 set incsearch " インクリメンタルサーチ. １文字入力毎に検索を行う
-set ignorecase " 検索パターンに大文字小文字を区別しない
+"set ignorecase " 検索パターンに大文字小文字を区別しない
 set smartcase " 検索パターンに大文字を含んでいたら大文字小文字を区別する
 set hlsearch " 検索結果をハイライト
 
