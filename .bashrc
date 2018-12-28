@@ -9,7 +9,6 @@ alias rm='rm -i'
 alias od='od -tx1z -Ax -v'
 alias ll='ls -l'
 alias la='ls -a'
-alias g++='g++ -std=c++11'
 alias ls='exa'
 alias sl='sl -aF'
 
@@ -17,6 +16,10 @@ alias mkcd='source ~/bin/mkcd.sh'
 
 alias arduino180='/Applications/Arduino180.app/Contents/MacOS/Arduino'
 alias arduino185='/Applications/Arduino185.app/Contents/MacOS/Arduino'
+
+#alias g++='g++ -std=c++11'
+alias gcc='/usr/local/bin/gcc-8'
+alias g++='/usr/local/bin/g++-8 -std=c++11'
 
 eval "$(hub alias -s)"
 
