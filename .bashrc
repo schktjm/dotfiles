@@ -1,7 +1,7 @@
 #
 # .bashrc
 # # command prompt
-PS1="\[\e[35m\] [\w] \[\e[31m\](\!)\[\e[33m\]\$(__git_ps1)\n\[\e[32m\]◟(ˊ꒵ˋ∗)◜∗.♪ \[\e[0m\]$ "
+#PS1="\[\e[35m\] [\w] \[\e[31m\](\!)\[\e[33m\]\$(__git_ps1)\n\[\e[32m\]◟(ˊ꒵ˋ∗)◜∗.♪ \[\e[0m\]$ "
 #PS1="[\w]"
 
 # alias
@@ -11,6 +11,7 @@ alias ll='ls -l'
 alias la='ls -a'
 alias ls='exa'
 alias sl='sl -aF'
+alias dc='docker-compose'
 
 alias mkcd='source ~/bin/mkcd.sh'
 
