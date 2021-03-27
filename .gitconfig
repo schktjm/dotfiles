@@ -1,0 +1,17 @@
+[user]
+	name = schktjm
+	email = si2.o.mjt@gmail.com
+[color]
+    ui = auto
+[gui]
+    encoding = utf-8
+[core]
+    editor = vim
+    quotepath = false
+	autoCRLF = false
+	excludesfile = ~/.gitignore_global
+[commit]
+    template = ~/git_template/.gitmessage
+[alias]
+    checkout = !echo Oh! use switch or restore
+    pll = git pull origin `git rev-parse --abbrev-ref HEAD`
