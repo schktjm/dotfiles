@@ -1,19 +1,15 @@
-#!/bin/bash
-
-echo PWD
+#!/bin/zsh
 
 for f in .??*
 do
     [[ "$f" == ".git" ]] && continue
     [[ "$f" == ".DS_Store" ]] && continue
+    [[ "$f" == ".brewfile" ]] && continue
 
     echo "$f"
     unlink $HOME/$f
     ln -s ${PWD}/$f $HOME/$f
 done
-
-# zsh を指定
-chsh -s `which zsh`
 
 # Prezto のセットアップ
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
