@@ -10,6 +10,7 @@
     quotepath = false
 	autoCRLF = false
 	excludesfile = ~/.gitignore_global
+    ignorecase = false
 [commit]
     template = ~/.gitmessage
 [alias]
