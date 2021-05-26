@@ -46,6 +46,7 @@ alias g++='/usr/local/bin/g++-8 -std=c++11'
 eval "$(hub alias -s)"
 alias g='git'
 alias rmbranch="git branch --merged|egrep -v '\*|develop|master'|xargs git branch -d"
+alias gitlog="git log --oneline --graph --decorate"
 
 export GOPATH="$HOME/Documents/Codes/Go"
 export PATH="$PATH:$GOPATH/bin"
