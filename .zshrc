@@ -54,3 +54,4 @@ export PATH="$PATH:$HOME/Documents/Codes/Flutter/flutter/bin"
 
 export PATH="$HOME/.nodenv/bin:$PATH"
 eval "$(nodenv init -)"
+
