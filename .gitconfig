@@ -1,6 +1,7 @@
 [user]
 	name = schktjm
 	email = si2.o.mjt@gmail.com
+	signingkey = FF9ED4397B85B83AE284D14DBE1EFE9F178E8273
 [color]
     ui = auto
 [gui]
@@ -12,6 +13,11 @@
 	excludesfile = ~/.gitignore_global
 [commit]
     template = ~/git_template/.gitmessage
+	gpgsign = true
 [alias]
     checkout = !echo Oh! use switch or restore
     pll = git pull origin `git rev-parse --abbrev-ref HEAD`
+[gpg]
+	program = gpg
+[tag]
+	gpgsign = true
