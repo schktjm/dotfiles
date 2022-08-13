@@ -1,6 +1,6 @@
 [user]
 	name = schktjm
-	email = si2.o.mjt@gmail.com
+	email = schktjm@gmail.com
 	signingkey = FF9ED4397B85B83AE284D14DBE1EFE9F178E8273
 [color]
     ui = auto
@@ -11,8 +11,9 @@
     quotepath = false
 	autoCRLF = false
 	excludesfile = ~/.gitignore_global
+    ignorecase = false
 [commit]
-    template = ~/git_template/.gitmessage
+    template = ~/.gitmessage
 	gpgsign = true
 [alias]
     checkout = !echo Oh! use switch or restore
