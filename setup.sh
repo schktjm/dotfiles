@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 select_gitmessage() {
     PS3='どちらの .gitmessage を使用しますか？ '
