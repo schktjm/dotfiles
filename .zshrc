@@ -57,3 +57,7 @@ export PATH="$PATH:$HOME/Documents/Codes/Flutter/flutter/bin"
 export USER_NUMBER=1
 export BASTION_IP=153.125.137.74
 alias sshdev="sudo ssh ssh2-${USER_NUMBER}@${BASTION_IP} -L 80:192.168.0.2:80 -L 590${USER_NUMBER}:192.168.0.2:590${USER_NUMBER}"
+
+# Volta
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
