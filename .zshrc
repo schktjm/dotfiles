@@ -61,3 +61,7 @@ alias sshdev="sudo ssh ssh2-${USER_NUMBER}@${BASTION_IP} -L 80:192.168.0.2:80 -L
 # Volta
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
+
+# homebrew
+export HOMEBREW_BUNDLE_FILE="$HOME/dotfiles/.brewfile"
+alias brewi='(){ brew install $1 && brew bundle -f dump }'
