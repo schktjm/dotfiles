@@ -40,8 +40,8 @@ alias la='ls -a'
 alias dc='docker-compose'
 
 #alias g++='g++ -std=c++11'
-alias gcc='/usr/local/bin/gcc-8'
-alias g++='/usr/local/bin/g++-8 -std=c++11'
+alias gcc='/opt/homebrew/bin/gcc-9'
+alias g++='/opt/homebrew/bin/g++-9'
 
 #git/github
 eval "$(hub alias -s)"
