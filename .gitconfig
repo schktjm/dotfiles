@@ -1,7 +1,7 @@
 [user]
 	name = schktjm
 	email = schktjm@gmail.com
-	signingkey = F09A548A3C9B11DDFE14CA0C7D59B6493935D56A
+	signingkey = FF750128B7C1CF9AB35745371EA397C019522714
 [color]
     ui = auto
 [gui]
@@ -22,3 +22,5 @@
 	program = gpg
 [tag]
 	gpgsign = true
+[init]
+	defaultBranch = main
