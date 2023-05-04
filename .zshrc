@@ -40,8 +40,8 @@ alias la='ls -a'
 alias dc='docker-compose'
 
 #alias g++='g++ -std=c++11'
-alias gcc='/opt/homebrew/bin/gcc-9'
-alias g++='/opt/homebrew/bin/g++-9'
+alias gcc='/opt/homebrew/bin/gcc-12'
+alias g++='/opt/homebrew/bin/g++-12'
 
 #git/github
 eval "$(hub alias -s)"
@@ -61,7 +61,12 @@ alias sshdev="sudo ssh ssh2-${USER_NUMBER}@${BASTION_IP} -L 80:192.168.0.2:80 -L
 # Volta
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
+## experimental  at 2023/03/04
+export VOLTA_FEATURE_PNPM=1
 
 # homebrew
 export HOMEBREW_BUNDLE_FILE="$HOME/dotfiles/.brewfile"
 alias brewi='(){ brew install $1 && brew bundle -f dump }'
+
+# pnpm
+alias pn='pnpm'
