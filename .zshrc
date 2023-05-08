@@ -44,7 +44,6 @@ alias gcc='/opt/homebrew/bin/gcc-12'
 alias g++='/opt/homebrew/bin/g++-12'
 
 #git/github
-eval "$(hub alias -s)"
 alias g='git'
 alias rmbranch="git branch --merged|egrep -v '\*|develop|master'|xargs git branch -d"
 alias gitlog="git log --oneline --graph --decorate"
@@ -67,6 +66,8 @@ export VOLTA_FEATURE_PNPM=1
 # homebrew
 export HOMEBREW_BUNDLE_FILE="$HOME/dotfiles/.brewfile"
 alias brewi='(){ brew install $1 && brew bundle -f dump }'
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 
 # pnpm
 alias pn='pnpm'
