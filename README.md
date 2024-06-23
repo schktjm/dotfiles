@@ -27,3 +27,22 @@ $ ./setup.sh
 _vimrc の参照した qiita_  
 https://qiita.com/ahiruman5/items/4f3c845500c172a02935  
 https://qiita.com/kuwana/items/d9778a9ec42a53b3aa10
+
+## アップデート方法
+
+### brewfile のアップデート方法
+
+1. install と同時に行う場合
+
+```sh
+$ brewi [package]
+```
+
+2. 普通にアップデートしたい時
+
+```
+$ brew bundle -f dump
+```
+
+https://docs.brew.sh/Manpage#bundle-subcommand
+
