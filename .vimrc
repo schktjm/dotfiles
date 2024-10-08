@@ -4,75 +4,76 @@ scriptencoding utf-8
 " ↑2行目はVim Script内でマルチバイトを使う場合の設定
 " Vim scritptにvimrcも含まれるので、日本語でコメントを書く場合は先頭にこの設定が必要になる
 
-"----------------------------------------------------------
-" NeoBundle
-"----------------------------------------------------------
-if has('vim_starting')
-    " 初回起動時のみruntimepathにNeoBundleのパスを指定する
-    set runtimepath+=~/.vim/bundle/neobundle.vim/
+" "----------------------------------------------------------
+" " NeoBundle
+" "----------------------------------------------------------
+" if has('vim_starting')
+"     " 初回起動時のみruntimepathにNeoBundleのパスを指定する
+"     set runtimepath+=~/.vim/bundle/neobundle.vim/
 
-    " NeoBundleが未インストールであればgit cloneする
-    if !isdirectory(expand("~/.vim/bundle/neobundle.vim/"))
-        echo "install NeoBundle..."
-        :call system("git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim")
-    endif
-endif
+"     " NeoBundleが未インストールであればgit cloneする
+"     if !isdirectory(expand("~/.vim/bundle/neobundle.vim/"))
+"         echo "install NeoBundle..."
+"         :call system("git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim")
+"     endif
+" endif
 
-call neobundle#begin(expand('~/.vim/bundle/'))
+" call neobundle#begin(expand('~/.vim/bundle/'))
 
-" インストールするVimプラグインを以下に記述
-" NeoBundle自身を管理
-NeoBundleFetch 'Shougo/neobundle.vim'
-" カラースキームmolokai
-NeoBundle 'tomasr/molokai'
-" ステータスラインの表示内容強化
-NeoBundle 'itchyny/lightline.vim'
-" インデントの可視化
-NeoBundle 'Yggdroot/indentLine'
-" 末尾の全角半角空白文字を赤くハイライト
-NeoBundle 'bronson/vim-trailing-whitespace'
-" 構文エラーチェック
-NeoBundle 'scrooloose/syntastic'
-" 多機能セレクタ
-NeoBundle 'ctrlpvim/ctrlp.vim'
-" CtrlPの拡張プラグイン. 関数検索
-NeoBundle 'tacahiroy/ctrlp-funky'
-" CtrlPの拡張プラグイン. コマンド履歴検索
-NeoBundle 'suy/vim-ctrlp-commandline'
-" CtrlPの検索にagを使う
-NeoBundle 'rking/ag.vim'
-" プロジェクトに入ってるESLintを読み込む
-NeoBundle 'pmsorhaindo/syntastic-local-eslint.vim'
-"arduinoでvimが使えるようにする
-NeoBundle 'sudar/vim-arduino-syntax'
+" " インストールするVimプラグインを以下に記述
+" " NeoBundle自身を管理
+" NeoBundleFetch 'Shougo/neobundle.vim'
+" " カラースキームmolokai
+" NeoBundle 'tomasr/molokai'
+" " ステータスラインの表示内容強化
+" NeoBundle 'itchyny/lightline.vim'
+" " インデントの可視化
+" NeoBundle 'Yggdroot/indentLine'
+" " 末尾の全角半角空白文字を赤くハイライト
+" NeoBundle 'bronson/vim-trailing-whitespace'
+" " 構文エラーチェック
+" NeoBundle 'scrooloose/syntastic'
+" " 多機能セレクタ
+" NeoBundle 'ctrlpvim/ctrlp.vim'
+" " CtrlPの拡張プラグイン. 関数検索
+" NeoBundle 'tacahiroy/ctrlp-funky'
+" " CtrlPの拡張プラグイン. コマンド履歴検索
+" NeoBundle 'suy/vim-ctrlp-commandline'
+" " CtrlPの検索にagを使う
+" NeoBundle 'rking/ag.vim'
+" " プロジェクトに入ってるESLintを読み込む
+" NeoBundle 'pmsorhaindo/syntastic-local-eslint.vim'
+" "arduinoでvimが使えるようにする
+" NeoBundle 'sudar/vim-arduino-syntax'
 
-" vimのlua機能が使える時だけ以下のVimプラグインをインストールする
-if has('lua')
-    " コードの自動補完
-    NeoBundle 'Shougo/neocomplete.vim'
-    " スニペットの補完機能
-    NeoBundle "Shougo/neosnippet"
-    " スニペット集
-    NeoBundle 'Shougo/neosnippet-snippets'
-endif
+" " vimのlua機能が使える時だけ以下のVimプラグインをインストールする
+" if has('lua')
+"     " コードの自動補完
+"     NeoBundle 'Shougo/neocomplete.vim'
+"     " スニペットの補完機能
+"     NeoBundle "Shougo/neosnippet"
+"     " スニペット集
+"     NeoBundle 'Shougo/neosnippet-snippets'
+" endif
 
-call neobundle#end()
+" call neobundle#end()
 
-" ファイルタイプ別のVimプラグイン/インデントを有効にする
-filetype plugin indent on
+" " ファイルタイプ別のVimプラグイン/インデントを有効にする
+" filetype plugin indent on
 
-" 未インストールのVimプラグインがある場合、インストールするかどうかを尋ねてくれるようにする設定
-NeoBundleCheck
+" " 未インストールのVimプラグインがある場合、インストールするかどうかを尋ねてくれるようにする設定
+" NeoBundleCheck
 
-"----------------------------------------------------------
-" カラースキーム
-"----------------------------------------------------------
-if neobundle#is_installed('molokai')
-    colorscheme molokai " カラースキームにmolokaiを設定する
-endif
+" "----------------------------------------------------------
+" " カラースキーム
+" "----------------------------------------------------------
+" if neobundle#is_installed('molokai')
+"     colorscheme molokai " カラースキームにmolokaiを設定する
+" endif
 
-set t_Co=256 " iTerm2など既に256色環境なら無くても良い
+" set t_Co=256 " iTerm2など既に256色環境なら無くても良い
 syntax enable " 構文に色を付ける
+colorscheme torte
 
 "----------------------------------------------------------
 " 文字
@@ -190,25 +191,25 @@ endif
 "----------------------------------------------------------
 " neocomplete・neosnippetの設定
 "----------------------------------------------------------
-if neobundle#is_installed('neocomplete.vim')
-    " Vim起動時にneocompleteを有効にする
-    let g:neocomplete#enable_at_startup = 1
-    " smartcase有効化. 大文字が入力されるまで大文字小文字の区別を無視する
-    let g:neocomplete#enable_smart_case = 1
-    " 3文字以上の単語に対して補完を有効にする
-    let g:neocomplete#min_keyword_length = 3
-    " 区切り文字まで補完する
-    let g:neocomplete#enable_auto_delimiter = 1
-    " 1文字目の入力から補完のポップアップを表示
-    let g:neocomplete#auto_completion_start_length = 1
-    " バックスペースで補完のポップアップを閉じる
-    inoremap <expr><BS> neocomplete#smart_close_popup()."<C-h>"
+" if neobundle#is_installed('neocomplete.vim')
+"     " Vim起動時にneocompleteを有効にする
+"     let g:neocomplete#enable_at_startup = 1
+"     " smartcase有効化. 大文字が入力されるまで大文字小文字の区別を無視する
+"     let g:neocomplete#enable_smart_case = 1
+"     " 3文字以上の単語に対して補完を有効にする
+"     let g:neocomplete#min_keyword_length = 3
+"     " 区切り文字まで補完する
+"     let g:neocomplete#enable_auto_delimiter = 1
+"     " 1文字目の入力から補完のポップアップを表示
+"     let g:neocomplete#auto_completion_start_length = 1
+"     " バックスペースで補完のポップアップを閉じる
+"     inoremap <expr><BS> neocomplete#smart_close_popup()."<C-h>"
 
-    " エンターキーで補完候補の確定. スニペットの展開もエンターキーで確定
-    imap <expr><CR> neosnippet#expandable() ? "<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "<C-y>" : "<CR>"
-    " タブキーで補完候補の選択. スニペット内のジャンプもタブキーでジャンプ
-    imap <expr><TAB> pumvisible() ? "<C-n>" : neosnippet#jumpable() ? "<Plug>(neosnippet_expand_or_jump)" : "<TAB>"
-endif
+"     " エンターキーで補完候補の確定. スニペットの展開もエンターキーで確定
+"     imap <expr><CR> neosnippet#expandable() ? "<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "<C-y>" : "<CR>"
+"     " タブキーで補完候補の選択. スニペット内のジャンプもタブキーでジャンプ
+"     imap <expr><TAB> pumvisible() ? "<C-n>" : neosnippet#jumpable() ? "<Plug>(neosnippet_expand_or_jump)" : "<TAB>"
+" endif
 
 "----------------------------------------------------------
 " Syntastic
